@@ -1,24 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nuQ-ha-sZh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--speak-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SDKTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-2y-loK">
+                                <rect key="frame" x="128" y="271" width="136" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="👄">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="speak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kS1-46-NDh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="speak" image="speaker" catalog="system" id="LTb-t4-5HV"/>
+                    <navigationItem key="navigationItem" id="3rb-Xa-m4I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2267.93893129771" y="-56.338028169014088"/>
+        </scene>
+        <!--music-->
+        <scene sceneID="H8M-2S-UZa">
+            <objects>
+                <viewController id="cnW-1B-H5d" customClass="ViewController" customModule="SDKTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nIF-ym-Ksp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="opticaldiscdrive" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4re-I2-j2q">
+                                <rect key="frame" x="87" y="140" width="220" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC6-Zn-4MY">
+                                <rect key="frame" x="129" y="511" width="136" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶️">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Audio:" destination="cnW-1B-H5d" eventType="touchUpInside" id="ws9-3B-zkm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KAM-aT-zlf"/>
+                        <color key="backgroundColor" red="0.44041906113199203" green="0.95500165583908825" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="music" image="music.note.list" catalog="system" id="zyn-qL-xVz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hA-8y-h4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="643"/>
+        </scene>
+        <!--movie-->
+        <scene sceneID="AOp-RQ-FOz">
+            <objects>
+                <viewController id="5gx-Nw-nsL" customClass="ViewController" customModule="SDKTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8d-WA-GxC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-g1-Ztd">
+                                <rect key="frame" x="129" y="275" width="136" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🎬">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="XsJ-Ll-wOz" kind="show" destinationCreationSelector="showMovie:" id="ysC-BL-Ych"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kDO-EN-xhf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="movie" image="video.fill" catalog="system" id="BEQ-Jv-dTv"/>
+                    <navigationItem key="navigationItem" id="Cqs-HE-bTp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mh-Pr-mP7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="1357"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="M37-tg-V0c">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="XsJ-Ll-wOz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="35h-bS-mXf"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrR-ni-pCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="1357"/>
+        </scene>
+        <!--map-->
+        <scene sceneID="lBE-RN-gBa">
+            <objects>
+                <viewController id="PZl-fS-ZA0" customClass="ViewController" customModule="SDKTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QFs-P2-K3U">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0b-2P-Fjv">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="745"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration" elevationStyle="realistic"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WFu-nL-kKe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="map" image="map" catalog="system" id="q6A-p7-GaF"/>
+                    <navigationItem key="navigationItem" id="1vl-rX-RKC"/>
+                    <connections>
+                        <outlet property="map" destination="w0b-2P-Fjv" id="qRk-Iz-NJf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bst-QF-KoM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339.6946564885495" y="793.66197183098598"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y1S-HQ-ceS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nuQ-ha-sZh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gSn-Sp-5r1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="MvM-Kb-Dz0"/>
+                        <segue destination="cnW-1B-H5d" kind="relationship" relationship="viewControllers" id="sgd-xi-Jue"/>
+                        <segue destination="5gx-Nw-nsL" kind="relationship" relationship="viewControllers" id="ubO-na-IJW"/>
+                        <segue destination="PZl-fS-ZA0" kind="relationship" relationship="viewControllers" id="Iuu-gQ-qWk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FeY-5K-pU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341.2213740458014" y="-56.338028169014088"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" catalog="system" width="128" height="112"/>
+        <image name="music.note.list" catalog="system" width="128" height="115"/>
+        <image name="opticaldiscdrive" catalog="system" width="128" height="88"/>
+        <image name="speaker" catalog="system" width="128" height="123"/>
+        <image name="video.fill" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

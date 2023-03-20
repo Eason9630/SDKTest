@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		E9A5957D29C6B0D100A217AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A5957C29C6B0D100A217AA /* AppDelegate.swift */; };
 		E9A5957F29C6B0D100A217AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A5957E29C6B0D100A217AA /* SceneDelegate.swift */; };
-		E9A5958129C6B0D100A217AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A5958029C6B0D100A217AA /* ViewController.swift */; };
 		E9A5958429C6B0D100A217AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A5958229C6B0D100A217AA /* Main.storyboard */; };
 		E9A5958629C6B0D300A217AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A5958529C6B0D300A217AA /* Assets.xcassets */; };
 		E9A5958929C6B0D300A217AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A5958729C6B0D300A217AA /* LaunchScreen.storyboard */; };
+		E9A5959829C7635500A217AA /* 說好不哭.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9A5959729C7635500A217AA /* 說好不哭.mp3 */; };
+		E9A5959B29C76A3D00A217AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A5958029C6B0D100A217AA /* ViewController.swift */; };
+		E9A5959C29C76A4400A217AA /* 嘉賓.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9A5959929C7635C00A217AA /* 嘉賓.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E9A5958529C6B0D300A217AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A5958829C6B0D300A217AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A5958A29C6B0D300A217AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A5959729C7635500A217AA /* 說好不哭.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "說好不哭.mp3"; sourceTree = "<group>"; };
+		E9A5959929C7635C00A217AA /* 嘉賓.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "嘉賓.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E9A5957E29C6B0D100A217AA /* SceneDelegate.swift */,
 				E9A5958029C6B0D100A217AA /* ViewController.swift */,
 				E9A5958229C6B0D100A217AA /* Main.storyboard */,
+				E9A5959729C7635500A217AA /* 說好不哭.mp3 */,
+				E9A5959929C7635C00A217AA /* 嘉賓.mp3 */,
 				E9A5958529C6B0D300A217AA /* Assets.xcassets */,
 				E9A5958729C6B0D300A217AA /* LaunchScreen.storyboard */,
 				E9A5958A29C6B0D300A217AA /* Info.plist */,
@@ -125,9 +131,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A5959C29C76A4400A217AA /* 嘉賓.mp3 in Resources */,
 				E9A5958929C6B0D300A217AA /* LaunchScreen.storyboard in Resources */,
 				E9A5958629C6B0D300A217AA /* Assets.xcassets in Resources */,
 				E9A5958429C6B0D100A217AA /* Main.storyboard in Resources */,
+				E9A5959829C7635500A217AA /* 說好不哭.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9A5958129C6B0D100A217AA /* ViewController.swift in Sources */,
+				E9A5959B29C76A3D00A217AA /* ViewController.swift in Sources */,
 				E9A5957D29C6B0D100A217AA /* AppDelegate.swift in Sources */,
 				E9A5957F29C6B0D100A217AA /* SceneDelegate.swift in Sources */,
 			);
